@@ -1,0 +1,305 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  padding: 0;
+  margin: 0;
+  font-family: 'Italiana', serif;
+
+}
+
+.top{
+  background: url(home.png);
+  background-size: cover;
+  color: white;
+  margin: 0;
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  /*padding-left: 10%;*/
+  
+}
+h1{
+  font-size: 550%;
+  line-height: 0px;
+}
+h3{
+  color: #ffe6ea;
+  font-size: 150%;
+}
+
+.middle{
+  background: url(homebackup.png);
+  background-size: cover;
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.footer{
+  background: black;
+  height: 15%;
+  color: white;
+  padding: 2%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+
+}
+
+a{
+  color: #ffe6ea;
+  text-decoration: none;
+  font-weight: 900;
+  
+}
+
+a:hover{
+  color: white;
+}
+
+.nav a{
+  color: white;
+  display: inline-block;
+
+}
+.nav a:hover{
+  color: #ffe6ea;
+  text-decoration: underline;
+}
+
+.nav{
+  height: 8%;
+  padding: 1%;
+  margin-top: 0;
+  /*margin-right: 12%;*/
+  text-align: center;
+  background: black;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+
+}
+
+li{
+  display: inline;
+  margin: 5%;
+  font-size: 120%;
+}
+
+h2{
+  font-size: 200%;
+}
+
+.middle{
+  text-align: center;
+}
+
+.bubble{
+  background: white;
+  padding: 5%;
+  font-size: 130%;
+  margin-right: 1% auto 1% auto;
+
+}
+
+hr{
+  width: 75%;
+}
+
+.button{
+  color: black;
+  border-width: thin;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  padding: 2%;
+  font-weight: lighter;
+  font-size: 140%;
+  
+}
+
+.button:hover{
+  background: #ffe6ea;
+  color: black;
+  font-size: 160%;
+}
+
+#banner{
+  background: url(bannerpic.jpg);
+  background-size: fit;
+  margin: 0;
+  text-align: center;
+  height: 10%;
+  padding: 3%;
+  
+}
+
+#banner2{
+  background: url(banner2pic.png);
+  background-size: cover;
+  top: 2%;
+  bottom: 2%;
+  text-align: center;
+  height: 10%;
+  padding: 4%;
+  
+}
+
+.shop{
+  color: black;
+}
+
+.white{
+  /*scroll-snap-align: start;
+  scroll-snap-stop: always;*/
+  text-align: center;
+  padding: 5%;
+}
+
+.grid
+ {
+  display: grid;
+  grid-template-columns: 0.75fr 0.75fr 0.75fr;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+  justify-content: center;
+
+}
+
+.item{
+  text-align: center;
+  width: 100%;
+
+}
+
+.submit{
+  color: white;
+  border: thin black solid;
+  background: black;
+  padding: 1%;
+  cursor: pointer;
+  font-family: Roboto, 'serif';
+
+}
+
+form{
+  padding: 2%;
+  margin: 2%;
+}
+
+input{
+  width: 20%;
+  height: 30px;
+  margin: 1%;
+  border: thin gray solid;
+  border-radius: 5px;
+}
+
+#overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+}
+
+#shopOverlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+}
+
+.content{
+  width: 45%;
+  height: 35%;
+  background: white;
+  text-align: center;
+  padding: 2%;
+  font-size: 160%;
+  position: relative;
+}
+
+#close{
+  font-family: 'Roboto', serif;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-weight: bolder;
+  font-size: 130%;
+  cursor: pointer;
+}
+
+#closeShop{
+  font-family: Roboto, serif;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-weight: bolder;
+  font-size: 130%;
+  cursor: pointer;
+}
+
+.submit:hover{
+  color: black;
+  background: #ffe6ea;
+  transition: 0.5s;
+}
+
+.item p{
+  font-family: Roboto, 'serif';
+}
+
+.outline{
+  border: thin silver solid; 
+  padding: 5%;
+}
+
+
+@media only screen and (max-width: 600px){
+  .grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.75fr 0.75fr 0.75fr;
+  }
+
+  .bubble{
+    width: 75%;
+  }
+
+  .item{
+    padding: 2%;
+  }
+
+  .white{
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  .space{
+    margin-top: 10%;
+    height: 15%;
+    
+  }
+
+  .popupWords{
+    font-size: 90%;
+  }
+
+  
+}
